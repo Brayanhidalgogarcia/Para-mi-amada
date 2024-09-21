@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+    background: linear-gradient(70deg, #a3c1e0, #e6b5e5, #f7d1c3); /* Colores pastel */
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.con-2 {
+    display: none;
+}
+
+canvas {
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.text {
+    display: none;
+}
+
+.text h2 {
+    font-size: 50px;
+}
+
+#B12 {
+    margin-left: 30px;
+}
+
+.button {
+    font-family: monospace;
+    font-size: x-large;
+    transition-duration: 0.2s;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #d2e9d2; /* Color pastel */
+    color: black;
+    border: 2px solid #97c7a0; /* Color pastel */
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    border-radius: 14px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    background-color: #FFF; /* Color pastel */
+}
+
+.container-binicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.con-emergente {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+
+.cua {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid #d2e9d2; /* Color pastel */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@media (max-width: 468px) {
+    body {
+        background: linear-gradient(100deg, #a3c1e0, #e6b5e5, #f7d1c3); /* Colores pastel */
+    }
+}
